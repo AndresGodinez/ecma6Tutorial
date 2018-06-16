@@ -4,7 +4,8 @@
   "description": "testing ecma6",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "http-server"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/ccoenraets/es6-tutorial#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3"
+    "babel-core": "^6.26.3",
+    "http-server": "^0.11.1"
   }
 }
